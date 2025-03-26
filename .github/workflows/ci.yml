@@ -28,9 +28,10 @@ jobs:
           poetry install --no-root
 
       # Passo 4: Testar o código (opcional)
-      #- name: Run tests
-       # run: |
-        #  poetry run pytest
+      - name: Run tests
+        run: |
+          poetry run pytest
+
 
       # Passo 5: Fazer o deploy para o Render
       #- name: Deploy to Render
